@@ -1,0 +1,37 @@
+<svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="star" viewBox="0 0 16 15">
+    <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+  </symbol>
+
+  <symbol id="nextButton" viewBox="0 0 32 32">
+    <g>
+      <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+      <path d="M14 11L19 16L14 21" fill="white" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </symbol>
+
+  <symbol id="prevButton" viewBox="0 0 32 32">
+    <g clip-path="url(#clip0_663_1730)">
+      <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+      <path d="M14 11L19 16L14 21" stroke="#A65CF0" transform="matrix(-1 0 0 1 32 0)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_663_1730">
+        <rect width="32" height="32" fill="white" transform="matrix(-1 0 0 1 32 0)"/>
+      </clipPath>
+    </defs>
+  </symbol>
+
+  <!-- <symbol id="nextButton" viewBox="0 0 32 32">
+    <g clip-path="url(#clip0_663_1730)">
+      <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+      <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_663_1730">
+        <rect width="32" height="32" fill="white"/>
+      </clipPath>
+    </defs>
+  </symbol> -->
+
+</svg>

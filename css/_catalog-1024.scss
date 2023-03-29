@@ -1,0 +1,124 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "name name name name"
+    "sidebar sidebar sidebar sidebar"
+    "goods goods goods goods"
+  ;
+  gap: 1px 31px;
+  padding-bottom: 70px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  gap: 32px;
+  &__title {
+    grid-column: span 1;
+    padding: 9px 0;
+    &--desc {
+      display: none;
+    }
+    &--lap {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+    }
+  }
+  &__block {
+    grid-column: span 2;
+    margin-bottom: 32px;
+  }
+
+  .block {
+    position: relative;
+    z-index: 10;
+    &__title {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 13px;
+      margin-bottom: 0;
+      background: $grey_light;
+      border: 2px solid $grey_light;
+      border-radius: 10px;
+      cursor: pointer;
+      transition-duration: 0.3s;
+      outline: none;
+      &:hover {
+        background: $md_grey;
+        border: 2px solid $md_grey;
+      }
+      &:focus {
+        background: $pink_light;
+        border: 2px solid $primary;
+      }
+    }
+    &__span {
+      display: inline-block;
+      width: 12px;
+      height: 8px;
+      background-image: url('../img/header/select.png');
+      transition-duration: 0.3s;
+    }
+    &__wrapper {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      top: 18px;
+      width: 100%;
+    }
+    &__list {
+      padding: 41px 0 30px 30px;
+      background: $white;
+      border: 1px solid $md_grey;
+      border-radius: 0px 0px 10px 10px;
+    }
+    &.active {
+      & .block__title {
+        background: $white;
+        border: 2px solid $primary_shade;
+      }
+      & .block__span {
+        transform: rotate(180deg);
+      }
+      & .block__wrapper {
+        display: block;
+        overflow: hidden;
+      }
+    }
+    &__more {
+      display: block;
+      font-size: 16px;
+      line-height: 130%;
+      color: $primary;
+    }
+  }
+
+  .label {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .rate {
+    &__inputs {
+      flex-direction: column;
+    }
+    &__slider {
+      display: none;
+    }
+  }
+}
+
+.banner {
+  display: none;
+}
+
+.name {
+  margin-bottom: 16px;
+}

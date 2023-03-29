@@ -1,0 +1,60 @@
+.summary {
+  margin-bottom: 31px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+      "img img img img img img"
+      "prev prev cost cost cost cost"
+      "descr descr descr descr descr ."
+      "prop prop prop prop prop prop"
+  ;
+
+  .preview {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 25px;
+    &__img:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 18px;
+    }
+  }
+
+  .cost {
+    padding-top: 50px;
+  }
+
+  .description {
+    &__draft {
+      margin-top: 32px;
+      & picture:not(:last-child) {
+        margin-right: 28px;
+      }
+    }
+  }
+
+  .property {
+    &__row {
+      grid-template-columns: 1fr 216px;
+    }
+  }
+}
+
+.modal {
+  &__gallery {
+    top: 199px;
+  }
+
+  .gallery {
+    width: calc(100vw - #{$margin768}*2);
+    height: 494px;
+    &__bigSwiper {
+      height: 328px;
+      padding: 50px 20px;
+    }
+    &__smallSwiper {
+      padding: 20px 79px;
+    }
+  }
+
+}

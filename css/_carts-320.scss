@@ -1,0 +1,144 @@
+.summary {
+  margin-bottom: 61px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+      "img img img img"
+      "prev prev prev prev"
+      "cost cost cost cost"
+      "descr descr descr descr"
+      "prop prop prop prop"
+  ;
+
+  .preview {
+    flex-direction: row;
+    padding: 10px;
+    margin: -16px 0;
+    &__img:not(:last-child) {
+      margin-right: 38px;
+      margin-bottom: 0;
+    }
+  }
+
+  .cost {
+    padding-top: 0;
+    &__star {
+      &.product-cart__star {
+        & span {
+          font-size: 16px;
+          line-height: 130%;
+        }
+        & svg {
+          width: 16px;
+          height: 15px;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    &__descr {
+      margin-bottom: 16px;
+    }
+    &__price {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+    &__btn {
+      width: 100%;
+    }
+    &__link {
+      padding-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .description {
+    &__draft {
+      & picture:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+
+  .property {
+    &__row {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-bottom: 8px;
+    }
+    &__col1 {
+      grid-column: 1;
+      margin-right: 0;
+      font-size: 10px;
+      line-height: 14px;
+      &::after {
+        display: none;
+      }
+    }
+    &__col2 {
+      grid-column: 1;
+      width: 100%;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
+
+// .similar {
+//   .product-cart__img {
+//     height: 60px;
+//     margin-bottom: 8px;
+//   }
+// }
+
+.modal {
+  &__oneclick {
+    top: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__gallery {
+    top: 143px;
+  }
+
+  .oneclick {
+    padding: 30px 16px;
+    width: calc(100vw - #{$margin320}*2 - 17px);
+    &__descr {
+      margin-bottom: 16px;
+      width: 96%;
+    }
+    .form__input {
+      margin-bottom: 16px;
+    }
+    &__elephant {
+      padding: 0 35px;
+      height: 156px;
+      & img {
+        width: 73px;
+        height: 60px;
+        margin-bottom: 14px;
+      }
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .gallery {
+    width: calc(100vw - #{$margin320}*2 - 17px);
+    height: 286px;
+    &__bigSwiper {
+      height: 168px;
+      padding: 32px 16px;
+    }
+    &__smallSwiper {
+      height: 118px;
+      padding: 16px 62px;
+    }
+  }
+}

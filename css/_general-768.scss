@@ -1,0 +1,114 @@
+.container {
+  margin: 0 $margin768;
+}
+
+.header {
+  &__container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(58px, auto) minmax(50px, auto) minmax(92px, auto) minmax(60px, auto);
+    grid-template-areas:
+      "reg reg reg tel tel tel"
+      "sub sub sub sub sub sub"
+      "nav . log log . sin"
+      "sea sea sea sea cat cat"
+    ;
+    align-items: center;
+  }
+  &__subnav {
+    margin-right: -8px;
+  }
+  &__logo {
+    justify-self: center;
+  }
+  &__nav {
+    position: relative;
+    margin-left: 0;
+  }
+  &__search {
+    margin-right: -19px;
+  }
+  &__category {
+    margin-left: 19px;
+  }
+  &__sign {
+    margin-right: -3px;
+  }
+  .nav {
+    &.open {
+      position: absolute;
+      z-index: 100;
+      top: -34px;
+      left: -$margin768;
+      width: calc(100vw - 17px);
+      padding: 34px $margin768 60px;
+      box-sizing: border-box;
+      background-color: $white;
+      .nav {
+        &__exit {
+          display: block;
+          margin-bottom: 34px;
+        }
+        &__list {
+          display: grid;
+          grid-template-columns: auto auto 1fr;
+          grid-template-rows: repeat(3, 1fr);
+          gap: 41px 64px;
+          grid-auto-flow: column dense;
+          .elephant {
+            display: block;
+            grid-column: 3;
+            grid-row: 1 / 4;
+            place-self: end;
+          }
+        }
+        &__item {
+          &:nth-child(-n+3) {
+            grid-column: 1;
+          }
+          &:nth-child(n+4) {
+            grid-column: 2;
+          }
+        }
+        &__link {
+          padding: 0;
+        }
+      }
+    }
+    & ~ .burger {
+      display: block;
+    }
+    &__list {
+      display: none;
+    }
+  }
+
+  .category {
+    .choices {
+      width: auto;
+    }
+  }
+}
+
+.footer {
+  &__large {
+    gap: 25px 35px;
+  }
+  &__logo {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    align-self: center;
+  }
+  &__social {
+    margin-top: -3px;
+    grid-column: 10 / span 3;
+    grid-row: 1;
+    align-self: center;
+  }
+  &__nav {
+    grid-column: 1 / span 12;
+    grid-row: 2;
+    .footer-nav__item:first-child {
+      margin-bottom: 8px;
+    }
+  }
+}

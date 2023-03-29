@@ -1,0 +1,33 @@
+.name {
+  margin-bottom: 27px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 16px 32px;
+  margin-bottom: 32px;
+  &__title {
+    padding: 0;
+    margin: 0;
+  }
+  &__block {
+    margin: 0;
+    &:nth-child(2n) {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+.goods {
+  &__swiper {
+    & .product-cart {
+      &:nth-child(3) {
+        order: 7 !important;
+      }
+      &:nth-child(4) {
+        order: 6 !important;
+      }
+    }
+  }
+}

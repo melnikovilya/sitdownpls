@@ -1,0 +1,36 @@
+@import '_var.scss';
+@import '_glob.scss';
+
+@import '_general-1920.scss';
+@import '_main-1920.scss';
+
+@media (max-width: 1352px) {
+  .container {
+    margin: 0 $margin1024;
+    width: auto;
+  }
+
+  .product-cart {
+    &.large img{
+      object-position: center;
+    }
+    &__draft {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  @import '_general-1024.scss';
+  @import '_main-1024.scss';
+}
+
+@media (max-width: 900px) {
+  @import '_general-768.scss';
+  @import '_main-768.scss';
+}
+
+@media (max-width: 650px) {
+  @import '_general-320.scss';
+  @import '_main-320.scss';
+}

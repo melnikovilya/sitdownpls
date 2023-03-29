@@ -1,0 +1,45 @@
+.header__crumbs {
+  padding-top: 22px;
+}
+
+.summary {
+  margin-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas:
+      "img img img img img cost cost cost cost"
+      "prev prev prev prev prev cost cost cost cost"
+      "descr descr descr descr descr prop prop prop prop"
+  ;
+
+  .preview {
+    padding: 10px;
+  }
+}
+
+.modal {
+  &__oneclick {
+    top: 184px;
+  }
+
+  &__gallery {
+    top: 166px;
+  }
+
+  .gallery {
+    width: calc(100vw - #{$margin1024}*2);
+    height: 588px;
+    &__next,
+    &__prev {
+      display: block;
+    }
+    &__bigSwiper {
+      height: 422px;
+      padding: 50px 65px;
+    }
+    &__smallSwiper {
+      padding: 20px 66px;
+    }
+  }
+
+}

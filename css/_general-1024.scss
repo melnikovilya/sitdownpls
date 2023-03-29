@@ -1,0 +1,54 @@
+.header {
+  &__container {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: minmax(58px, auto) minmax(50px, auto) minmax(92px, auto) minmax(60px, auto);
+    grid-template-areas:
+      "reg reg reg reg tel tel tel tel"
+      "sub sub sub sub sub sub . sin"
+      "log log nav nav nav nav nav nav"
+      "sea sea sea sea sea cat cat cat"
+    ;
+    align-items: center;
+  }
+  .back {
+    top: 58px;
+  }
+  &__tel {
+    justify-self: end;
+  }
+  &__subnav {
+    margin-left: -10px;
+    margin-right: -5px;
+  }
+  &__nav {
+    margin-left: 2px;
+  }
+  &__search {
+    margin-right: -57px;
+  }
+  &__category {
+    margin-left: 57px;
+  }
+  &__sign {
+    grid-area: sin;
+  }
+}
+
+.footer {
+  &__large {
+    gap: 28px 35px;
+  }
+  &__logo {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+  &__social {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+  &__nav {
+    margin-right: 2px;
+    grid-column: 4 / span 12;
+    grid-row: 1 / span 2;
+  }
+}
