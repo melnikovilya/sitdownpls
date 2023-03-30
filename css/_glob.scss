@@ -226,21 +226,24 @@ picture {
 }
 
 .product-cart {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $grey_light;
+  border-radius: 10px;
+  box-sizing: border-box;
   &.small {
     width: 296px !important;
   }
   &.large {
     width: calc(100% - 296px*2 - 32px*2) !important;
   }
-  position: relative;
   & ,
   &.small,
   &.large {
-    padding: 30px;
+    padding: 300px;
   }
-  background: $grey_light;
-  border-radius: 10px;
-  box-sizing: border-box;
   &__img {
     margin-bottom: 24px;
     height: 132px;
@@ -294,6 +297,7 @@ picture {
   &__btn,
   &.small .product-cart__btn,
   &.large .product-cart__btn {
+    margin-top: auto;
     width: min-content;
     padding: 17px 33px;
   }

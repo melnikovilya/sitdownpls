@@ -41,13 +41,13 @@
     font-size: 48px;
     line-height: 65px;
     color: $grey;
-    &_one {
+    &--one {
       max-width: 496px;
     }
-    &_two {
+    &--two {
       max-width: 466px;
     }
-    &_three {
+    &--three {
       max-width: 587px;
       color: $white;
     }
