@@ -273,6 +273,17 @@ picture img {
 
 .product-cart {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
   background: #F6F6F6;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
@@ -365,6 +376,7 @@ picture img {
 .product-cart__btn,
 .product-cart.small .product-cart__btn,
 .product-cart.large .product-cart__btn {
+  margin-top: auto;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -1353,15 +1365,15 @@ picture img {
   color: #999999;
 }
 
-.hero__title_one {
+.hero__title--one {
   max-width: 496px;
 }
 
-.hero__title_two {
+.hero__title--two {
   max-width: 466px;
 }
 
-.hero__title_three {
+.hero__title--three {
   max-width: 587px;
   color: #FFFFFF;
 }
@@ -1457,7 +1469,18 @@ picture img {
 
 .category .category-cart {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 30px;
+  height: auto;
   background: #F6F6F6;
   border-radius: 10px;
 }
@@ -1521,6 +1544,10 @@ picture img {
      object-fit: contain;
   -o-object-position: left center;
      object-position: left center;
+}
+
+.category .category-cart__link {
+  margin-top: auto;
 }
 
 .useful {
@@ -2327,6 +2354,7 @@ picture img {
     font-size: 10px;
   }
   .category .category-cart:not(:first-child) .category-cart__title {
+    margin-right: 20px;
     font-size: 16px;
     line-height: 22px;
   }
@@ -2335,6 +2363,10 @@ picture img {
     margin: 16px 0 0;
     width: calc(100% + 32px);
     height: 104px;
+  }
+  .category .category-cart:not(:first-child) .category-cart__img img {
+    -o-object-fit: fill;
+       object-fit: fill;
   }
   .category .category-cart:nth-child(4) .category-cart__img {
     height: 87px;

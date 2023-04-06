@@ -38,6 +38,9 @@
     margin-top: -16px;
     background: $grey_light;
     overflow: hidden;
+    &__img {
+      background: none;
+    }
     &__img:not(:last-child) {
       margin-right: 38px;
     }

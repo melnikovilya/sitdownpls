@@ -226,10 +226,11 @@ picture {
 }
 
 .product-cart {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: auto;
   background: $grey_light;
   border-radius: 10px;
   box-sizing: border-box;
@@ -242,7 +243,7 @@ picture {
   & ,
   &.small,
   &.large {
-    padding: 300px;
+    padding: 30px;
   }
   &__img {
     margin-bottom: 24px;

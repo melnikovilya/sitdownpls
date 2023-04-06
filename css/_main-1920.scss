@@ -130,6 +130,14 @@
     height: 22px;
   }
   .category-cart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    height: auto;
+    background: $grey_light;
+    border-radius: 10px;
     &:nth-child(-n + 2) {
       grid-column: span 3;
       .category-cart__img {
@@ -146,10 +154,6 @@
         height: 202px;
       }
     }
-    position: relative;
-    padding: 30px;
-    background: $grey_light;
-    border-radius: 10px;
     &__nav {
       display: flex;
       margin-bottom: 10px;
@@ -179,6 +183,9 @@
         object-fit: contain;
         object-position: left center;
       }
+    }
+    &__link {
+      margin-top: auto;
     }
   }
 }

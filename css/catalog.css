@@ -273,6 +273,17 @@ picture img {
 
 .product-cart {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
   background: #F6F6F6;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
@@ -365,6 +376,7 @@ picture img {
 .product-cart__btn,
 .product-cart.small .product-cart__btn,
 .product-cart.large .product-cart__btn {
+  margin-top: auto;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
